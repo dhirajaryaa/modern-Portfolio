@@ -1,9 +1,11 @@
 import React from 'react'
-import "./App.css"
+import Header from './components/Header'
 
 function App() {
   return (
-    <div>App</div>
+    <div className='bg-gray-900 text-white antialiased font-sans min-h-screen w-full'>
+    <Header />
+    </div>
   )
 }
 
