@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .nav-items {
+    @apply px-4 py-1.5 rounded-full text-sm font-semibold text-white/70 hover:text-white hover:bg-white/10 transition duration-300;
+  }
+  .nav-items-active {
+    @apply bg-white text-gray-900 hover:text-gray-900 hover:bg-white/70;
+  }
+}
