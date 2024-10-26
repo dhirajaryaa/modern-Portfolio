@@ -2,7 +2,7 @@ import React from "react";
 
 function Header() {
   return (
-    <header className="flex justify-center items-center fixed top-3 w-full">
+    <header className="flex justify-center items-center fixed top-3 w-full z-10">
       <nav
         className="flex p-1 gap-1 border rounded-full border-white/15 bg-white/10 backdrop-blur"
         aria-label="main navigation"

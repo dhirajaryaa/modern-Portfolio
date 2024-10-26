@@ -11,4 +11,7 @@
   .nav-items-active {
     @apply bg-white text-gray-900 hover:text-gray-900 hover:bg-white/70;
   }
+  .hero-ring {
+    @apply absolute inset-0 -z-30 border-2 border-emerald-300/5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full shadow-[0_0_80px_inset] shadow-emerald-300/5;
+  }
 }
