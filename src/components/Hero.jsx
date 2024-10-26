@@ -1,12 +1,13 @@
 import React from "react";
 import PersonWithLaptop from "../assets/images/heroimg.svg";
 import GrainImg from "../assets/images/grain.jpg";
+import StarIcon from "../assets/icons/star.svg";
 import { FaArrowDown, FaLinkedin } from "react-icons/fa";
 
 function Hero() {
   return (
     <section
-      className="py-32 md:py-44 relative z-0 overflow-x-hidden"
+      className="py-32 md:py-44 relative z-0 overflow-clip"
       aria-labelledby="hero-title"
     >
       {/* grains background image  */}
@@ -15,8 +16,13 @@ function Hero() {
         style={{ backgroundImage: `url(${GrainImg})` }}
       ></div>
       {/* circe overlay border 1  */}
-      <div className="size-[620px] hero-ring"></div>
-
+      <div className="size-[420px] md:size-[620px] hero-ring"></div>
+      {/* circe overlay border 2  */}
+      <div className="size-[820px] hero-ring"></div>
+      {/* circe overlay border 3  */}
+      <div className="size-[1020px] hero-ring"></div>
+      {/* circe overlay border 4  */}
+      <div className="size-[1220px] hero-ring"></div>
 
       {/* main text content here  */}
       <div className="container">
@@ -79,8 +85,8 @@ function Hero() {
             className="inline-flex items-center gap-3 border border-white/15 px-4 py-2 rounded-xl bg-white hover:bg-white/80 text-gray-900 font-semibold duration-200"
             aria-label="Let's Connect on LinkedIn"
           >
-            <span className="animate-pulse" aria-hidden="true">
-              <FaLinkedin size={18} className="text-blue-800" />
+            <span aria-hidden="true">
+              <FaLinkedin size={18} className="text-blue-600" />
             </span>
             <span>Let's Connect</span>
           </a>
