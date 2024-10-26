@@ -1,8 +1,19 @@
-# React + Vite
+# Modern Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a modern portfolio website built with React, Vite, Framer Motion for animations and Tailwind CSS for styling.
 
-Currently, two official plugins are available:
+You can view the live demo here: [https://dhirajaryaa.github.io/modern-Portfolio/](https://dhirajaryaa.github.io/modern-Portfolio/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The source code for this project is available on GitHub: [https://github.com/dhirajaryaa/modern-Portfolio.git](https://github.com/dhirajaryaa/modern-Portfolio.git)
+
+This project uses the following technologies:
+
+* React for building the UI components
+* Vite for building and serving the application
+* Framer Motion for animations
+* Tailwind CSS for styling
+
+The project also includes some basic ESLint rules to help keep the code clean and organized.
+
+This project is a work in progress, and I will be adding more content and features in the future. If you have any suggestions or feedback, please let me know!
+
