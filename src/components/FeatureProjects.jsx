@@ -46,61 +46,87 @@ function FeatureProjects() {
   ];
 
   return (
-    <section className=" pb-16">
-      <div className="container py-20 ">
-        <div className="flex justify-center">
-          <p className="text-center uppercase tracking-widest text-lg font-bold bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent">
+    <section
+      className="pb-16 pt-5"
+      aria-labelledby="featured-projects"
+      role="region"
+    >
+      <div className="container py-20 max-w-5xl w-full ">
+        <header className="flex justify-center">
+          <p
+            className="text-center uppercase tracking-widest text-lg font-bold bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent"
+            id="featured-projects"
+          >
             Real World Projects
           </p>
-        </div>
-        <h2 className="text-3xl font-serif text-center tracking-wide mt-4 capitalize ">
+        </header>
+        <h2 className="text-3xl md:text-4xl font-serif text-center tracking-wide mt-4 capitalize ">
           Featured Projects
         </h2>
-        <p className="text-white/60 text-center mt-1 my-5">
+        <p className="text-white/60 text-center my-5">
           Take a look at some of my real world projects
         </p>
 
-        <div className="mt-10 flex flex-wrap gap-14 justify-center">
+        <div className="mt-10 md:mt-20 flex flex-col gap-16">
           {portfolioProjects.map((project, index) => (
             <article
               key={index}
-              className="bg-gray-800 rounded-2xl relative z-0 overflow-hidden after:z-30 after:content-[''] after:absolute after:inset-0 after:border-2 after:border-offset-2 after:rounded-2xl  after:border-white/20 px-8 pt-8"
+              className="w-full gap-10 bg-gray-800 rounded-2xl relative z-0 overflow-hidden shadow-2xl px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 border-white/20 border-[3px]"
+              role="article"
+              aria-label={project.title}
             >
-              <div className="bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent inline-flex font-bold uppercase tracking-widest text-sm gap-2">
-                <span>{project.company}</span>
-                <span>&bull;</span>
-                <span>{project.year}</span>
-              </div>
+              {/* grains background image  */}
+              <div
+                className="absolute inset-0 -z-30 opacity-5"
+                style={{ backgroundImage: `url(${GrainImg})` }}
+                role="presentation"
+                aria-hidden="true"
+              ></div>
+              <div className="md:grid md:grid-cols-2 lg:gap-16">
+                <div className="md:pb-12 lg:pb-16">
+                  <div className="bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent inline-flex font-bold uppercase tracking-normal text-sm  gap-1">
+                    <span>{project.company}</span>
+                    <span>&bull;</span>
+                    <span>{project.year}</span>
+                  </div>
 
-              <h3 className="text-2xl mt-2 font-serif">{project.title}</h3>
-              <hr className="border-t-2 border-white/5 mt-4" />
-              <ul className="flex flex-col gap-4 mt-4">
-                {project.results.map((result, i) => (
-                  <li
-                    key={i}
-                    className="flex gap-2 items-center text-sm text-white/60"
-                  >
-                    <span>
-                      <RiCheckboxCircleLine
-                        size={18}
-                        className="text-emerald-300/50"
-                      />
-                    </span>
-                    <span>{result.title}</span>
-                  </li>
-                ))}
-              </ul>
-              <a href={project.link}>
-                <button className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold mt-8 flex gap-2 items-center justify-center">
-                  <span>View Live Site</span>
-                  <MdArrowOutward size={20} />
-                </button>
-              </a>
-              <img
-                src={project.image}
-                alt={project.title}
-                className="mt-8 -mb-4"
-              />
+                  <h3 className="text-2xl md:text-3xl mt-2 font-serif">
+                    {project.title}
+                  </h3>
+                  <hr className="border-t-2 border-white/5 mt-4" />
+                  <ul className="flex flex-col gap-4 mt-4">
+                    {project.results.map((result, i) => (
+                      <li
+                        key={i}
+                        className="flex gap-2 items-center text-sm text-white/60"
+                      >
+                        <span>
+                          <RiCheckboxCircleLine
+                            size={18}
+                            className="text-emerald-300/50"
+                            role="presentation"
+                            aria-hidden="true"
+                          />
+                        </span>
+                        <span>{result.title}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <a href={project.link} target="_blank">
+                    <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-8 rounded-xl font-semibold mt-8 flex gap-2 items-center justify-center hover:bg-white/80 duration-200">
+                      <span>View Live Site</span>
+                      <MdArrowOutward size={20} />
+                    </button>
+                  </a>
+                </div>
+                <div>
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className=" object-cover lg:absolute lg:h-full md:mt-0 md:mb-0 mt-4 overflow-hidden -mb-2 hover:scale-110 duration-300 lg:w-auto lg:max-w-none"
+                  />
+                </div>
+              </div>
             </article>
           ))}
         </div>
