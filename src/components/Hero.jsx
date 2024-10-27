@@ -1,7 +1,6 @@
 import React from "react";
 import PersonWithLaptop from "../assets/images/heroimg.svg";
 import GrainImg from "../assets/images/grain.jpg";
-import StarIcon from "../assets/icons/star.svg";
 import { FaArrowDown, FaLinkedin } from "react-icons/fa";
 
 function Hero() {
