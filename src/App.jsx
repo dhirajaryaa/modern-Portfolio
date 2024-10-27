@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import FeatureProjects from "./components/FeatureProjects";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <FeatureProjects />
       </main>
     </div>
   );
