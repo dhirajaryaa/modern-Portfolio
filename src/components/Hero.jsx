@@ -6,6 +6,7 @@ import { FaArrowDown, FaLinkedin } from "react-icons/fa";
 function Hero() {
   return (
     <section
+    id="home"
       className="py-32 md:py-44 relative z-0 overflow-clip"
       aria-labelledby="hero-title"
     >

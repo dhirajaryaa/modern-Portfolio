@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import FeatureProjects from "./components/FeatureProjects";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Hero />
         <FeatureProjects />
       </main>
+      <Footer />
     </div>
   );
 }
