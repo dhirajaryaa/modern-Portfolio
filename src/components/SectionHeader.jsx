@@ -13,7 +13,7 @@ function SectionHeader({tag,title,description}) {
         <h2 className="text-3xl md:text-4xl font-serif text-center tracking-wide mt-4 capitalize ">
         {title}
         </h2>
-        <p className="text-white/60 text-center my-5">
+        <p className="text-white/60 text-center my-5 mb-16">
 {description}
         </p>
     </>
