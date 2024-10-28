@@ -67,8 +67,8 @@ function About() {
       ],
     },
     {
-      title: "Tools",
-      description: "Utilizing powerful tools to enhance productivity.",
+      title: "Tools & Software",
+      description: "Utilizing powerful tools and software to enhance productivity.",
       techStack: [
         {
           name: "VS Code",
@@ -102,13 +102,30 @@ function About() {
           title="A glimpse into my world"
           description="Learn more about who I am, what I do, and what inspires me"
         />
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2  gap-10">
+        <Card className="bg-transparent border-0 shadow-none">
+          <div className="flex flex-col gap-5">
+            <div className="flex justify-center flex-col gap-2">
+              <h3 className="text-xl text-white flex items-center gap-2 font-serif tracking-wider">
+                <span>
+                  <BsStars size="25" className="text-emerald-500" />
+                </span>
+                Who am I
+              </h3>
+              <p className="text-white/70 text-center">
+                My name is Dhiraj Arya, a passionate Frontend Developer from
+                India. I love to explore new technologies, and I'm always
+                looking for new challenges and opportunities to grow.
+              </p>
+            </div>
+          </div>
+        </Card>
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2  md:gap-10">
 
         {sections.map((section, index) => (
           <Card key={index}>
             <div className="flex flex-col gap-5">
               <div className="flex justify-center flex-col gap-2">
-                <h3 className="text-xl text-white flex items-center gap-2">
+                <h3 className="text-xl text-white flex items-center gap-2 font-serif tracking-wider">
                   <span>
                     <BsStars size="25" className="text-emerald-500" />
                   </span>
