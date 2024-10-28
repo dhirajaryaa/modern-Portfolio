@@ -47,6 +47,7 @@ function FeatureProjects() {
 
   return (
     <section
+    id="project"
       className="pb-16 pt-5"
       aria-labelledby="featured-projects"
       role="region"
