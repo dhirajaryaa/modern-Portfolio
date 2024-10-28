@@ -4,6 +4,7 @@ import aiStartupLandingPage from "../assets/images/ai-startup-landing-page.png";
 import GrainImg from "../assets/images/grain.jpg";
 import { RiCheckboxCircleLine } from "react-icons/ri";
 import { MdArrowOutward } from "react-icons/md";
+import SectionHeader from "./SectionHeader";
 
 function FeatureProjects() {
   const portfolioProjects = [
@@ -47,26 +48,17 @@ function FeatureProjects() {
 
   return (
     <section
-    id="project"
+      id="project"
       className="pb-16 pt-5"
       aria-labelledby="featured-projects"
       role="region"
     >
       <div className="container py-20 max-w-5xl w-full ">
-        <header className="flex justify-center">
-          <p
-            className="text-center uppercase tracking-widest text-lg font-bold bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent"
-            id="featured-projects"
-          >
-            Real World Projects
-          </p>
-        </header>
-        <h2 className="text-3xl md:text-4xl font-serif text-center tracking-wide mt-4 capitalize ">
-          Featured Projects
-        </h2>
-        <p className="text-white/60 text-center my-5">
-          Take a look at some of my real world projects
-        </p>
+        <SectionHeader
+          tag="Real World Projects"
+          title="Featured Projects"
+          description=" Take a look at some of my real world projects"
+        />
 
         <div className="mt-10 md:mt-20 flex flex-col gap-16">
           {portfolioProjects.map((project, index) => (
