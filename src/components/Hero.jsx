@@ -6,7 +6,7 @@ import { FaArrowDown, FaLinkedin } from "react-icons/fa";
 function Hero() {
   return (
     <section
-    id="home"
+      id="home"
       className="py-32 md:py-44 relative z-0 overflow-clip"
       aria-labelledby="hero-title"
     >
@@ -42,10 +42,10 @@ function Hero() {
             className="flex items-center gap-2 bg-gray-950 border border-gray-800 px-4 py-1.5 -mt-4 capitalize rounded"
             aria-label="Available for new projects"
           >
-            <div
-              className="size-2.5 bg-green-500 rounded-full"
-              aria-hidden="true"
-            ></div>
+            <span class="relative flex h-3 w-3">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+            </span>
             <p className="text-sm font-medium">Available for new projects</p>
           </div>
         </div>
