@@ -1,32 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Header() {
+  const [activeLink, setActiveLink] = useState("home");
+  const navItems = ["Home", "Project", "About", "Contact"];
+
+  const handleClick = (link) => {
+    setActiveLink(link);
+  };
+
   return (
-    <header className="flex justify-center items-center fixed top-3 w-full z-10">
+    <header className="flex w-full z-50 justify-center items-center fixed top-3">
       <nav
         className="flex p-1 gap-1 border rounded-full border-white/15 bg-white/10 backdrop-blur"
         aria-label="main navigation"
       >
-        <a
-          href="#home"
-          className="nav-items nav-items-active"
-          aria-current="page"
-        >
-          Home
-        </a>
-        <a href="#project" className="nav-items" aria-label="View my projects">
-          Project
-        </a>
-        <a href="#about" className="nav-items" aria-label="Learn about me">
-          About
-        </a>
-        <a
-          href="#contact"
-          className="nav-items"
-          aria-label="Get in touch with me"
-        >
-          Contact
-        </a>
+        {navItems.map((item) => (
+          <a
+            key={item.toLowerCase()}
+            href={`#${item.toLowerCase()}`}
+            className={
+              activeLink === item.toLowerCase()
+                ? "nav-items nav-items-active"
+                : "nav-items"
+            }
+            onClick={() => handleClick(item.toLowerCase())}
+            aria-current={
+              activeLink === item.toLowerCase() ? "page" : undefined
+            }
+            aria-label={`View ${item.toLowerCase()}`}
+          >
+            {item}
+          </a>
+        ))}
       </nav>
     </header>
   );
