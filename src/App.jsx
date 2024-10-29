@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import FeatureProjects from "./components/FeatureProjects";
@@ -22,3 +21,4 @@ function App() {
 }
 
 export default App;
+
