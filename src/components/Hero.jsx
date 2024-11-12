@@ -2,6 +2,7 @@ import React from "react";
 import PersonWithLaptop from "../assets/images/heroimg.svg";
 import GrainImg from "../assets/images/grain.jpg";
 import { FaArrowDown, FaLinkedin } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 function Hero() {
   return (
@@ -32,13 +33,21 @@ function Hero() {
           role="img"
           aria-label="A Person work on laptop"
         >
-          <img
+          <motion.img
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.5 }}
+            viewport={{ once: true }}
             className="size-48 "
             src={PersonWithLaptop}
             alt="A Person work on laptop"
           />
           {/* adding status to the page */}
-          <div
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.5 }}
+            viewport={{ once: true }}
             className="flex items-center gap-2 bg-gray-950 border border-gray-800 px-4 py-1.5 -mt-4 capitalize rounded"
             aria-label="Available for new projects"
           >
@@ -47,10 +56,16 @@ function Hero() {
               <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
             </span>
             <p className="text-sm font-medium">Available for new projects</p>
-          </div>
+          </motion.div>
         </div>
         {/* adding content */}
-        <div className="max-w-lg mx-auto">
+        <motion.div
+     
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.5 }}
+        viewport={{ once: true }}
+        className="max-w-lg mx-auto">
           <h1
             className="text-3xl font-serif text-center tracking-wide mt-8 capitalize"
             id="hero-title"
@@ -65,10 +80,14 @@ function Hero() {
             <span className="text-yellow-500">web developer</span> with a
             passion for building fast, scalable, and visually appealing webApps.
           </p>
-        </div>
+        </motion.div>
         {/* adding call to action btn  */}
         <div className="flex flex-col md:flex-row gap-4 mt-8 items-center justify-center">
-          <a
+          <motion.a
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 2 }}
+            viewport={{ once: true }}
             href="#project"
             className="inline-flex items-center gap-2 border border-white/15 px-4 py-2 rounded-xl text-white hover:bg-white/10 duration-200"
             aria-label="Explore My Work"
@@ -77,8 +96,12 @@ function Hero() {
             <span className="animate-bounce" aria-hidden="true">
               <FaArrowDown size={18} />
             </span>
-          </a>
-          <a
+          </motion.a>
+          <motion.a
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 2 }}
+            viewport={{ once: true }}
             href="https://www.linkedin.com/in/dhirajaryaa0/"
             target="_blank"
             rel="noopener noreferrer"
@@ -89,7 +112,7 @@ function Hero() {
               <FaLinkedin size={18} className="text-blue-600" />
             </span>
             <span>Let's Connect</span>
-          </a>
+          </motion.a>
         </div>
       </div>
     </section>
