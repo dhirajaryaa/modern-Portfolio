@@ -31,7 +31,7 @@ function Hero() {
         <div
           className="flex flex-col items-center"
           role="img"
-          aria-label="A Person work on laptop"
+          aria-label="Illustration of a person working on a laptop"
         >
           <motion.img
             initial={{ opacity: 0, y: 100 }}
@@ -40,7 +40,7 @@ function Hero() {
             viewport={{ once: true }}
             className="size-48 "
             src={PersonWithLaptop}
-            alt="A Person work on laptop"
+            alt="Illustration of a person working on a laptop"
           />
           {/* adding status to the page */}
           <motion.div
@@ -102,14 +102,14 @@ function Hero() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 2 }}
             viewport={{ once: true }}
-            href="https://www.linkedin.com/in/dhirajaryaa0/"
+            href="https://www.linkedin.com/in/dhirajarya01/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 border border-white/15 px-4 py-2 rounded-xl bg-white hover:bg-white/80 text-gray-900 font-semibold duration-200"
+            className="inline-flex items-center gap-3 border border-white/15 px-5 py-2 rounded-xl bg-white hover:bg-white/80 text-gray-900 font-semibold duration-200"
             aria-label="Let's Connect on LinkedIn"
           >
             <span aria-hidden="true">
-              <FaLinkedin size={18} className="text-blue-600" />
+              <FaLinkedin size={18} className="text-blue-600 animate-pulse" />
             </span>
             <span>Let's Connect</span>
           </motion.a>
