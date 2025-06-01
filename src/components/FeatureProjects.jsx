@@ -1,4 +1,5 @@
 import devflowImg from "../assets/images/devflow.webp";
+import quickformxImg from "../assets/images/quickformx.webp";
 import aiResumeImg from "../assets/images/airesume.webp";
 import GrainImg from "../assets/images/grain.jpg";
 import { RiCheckboxCircleLine } from "react-icons/ri";
@@ -9,7 +10,8 @@ import portfolioProjects from "../data/project.json";
 // image map
 const imageMap = {
   "devflow.webp": devflowImg,
-  "airesume.webp": aiResumeImg
+  "airesume.webp": aiResumeImg,
+  "quickformx.webp": quickformxImg
 };
 
 function FeatureProjects() {

@@ -1,12 +1,39 @@
 [
   {
+    "company": "QuickFormX",
+    "year": "2025",
+    "title": "Dynamic Form Builder",
+    "results": [
+      {
+        "title": "Offers a user-friendly interface for building custom forms"
+      },
+      {
+        "title": "Supports various field types and validation rules"
+      },
+      {
+        "title": "Real-time form preview and deployment capabilities"
+      },
+      {
+        "title": "Upcoming features: Integration with third-party services and analytics dashboard"
+      }
+    ],
+    "link": "https://quickformx.dhirajarya.xyz/",
+    "image": "quickformx.webp"
+  },
+  {
     "company": "DevFlow",
     "year": "2025",
     "title": "Developer Productivity Tracker",
     "results": [
-        { "title": "Supports task creation, live time tracking, and status updates" },
-      { "title": "Integrated task-timer with GitHub PR syncing (beta)" },
-      { "title": "Upcoming: Visual PR time tracking and productivity analytics" }
+      {
+        "title": "Supports task creation, live time tracking, and status updates"
+      },
+      {
+        "title": "Integrated task-timer with GitHub PR syncing (beta)"
+      },
+      {
+        "title": "Upcoming: Visual PR time tracking and productivity analytics"
+      }
     ],
     "link": "https://devflow.dhirajarya.xyz/",
     "image": "devflow.webp"
@@ -16,9 +43,15 @@
     "year": "2025",
     "title": "AI Resume Builder",
     "results": [
-      { "title": "Enabled users to generate professional resumes in seconds" },
-      { "title": "Integrated Firebase Authentication for secure user access" },
-      { "title": "Implemented real-time resume editing with React and Tailwind CSS" }
+      {
+        "title": "Enabled users to generate professional resumes in seconds"
+      },
+      {
+        "title": "Integrated Firebase Authentication for secure user access"
+      },
+      {
+        "title": "Implemented real-time resume editing with React and Tailwind CSS"
+      }
     ],
     "link": "https://ai-resume-builder-dhirajaryaa.vercel.app/",
     "image": "airesume.webp"
