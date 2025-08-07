@@ -4,9 +4,9 @@ import { skills } from "../data/profile";
 
 function Skills() {
   return (
-    <section className="flex flex-col gap-2 my-10">
+    <section className="flex flex-col gap-2 mt-10">
       <p className="text-lg font-semibold">i definitely do 💪🏻:</p>
-      <div className="flex gap-2 items-center justify-center flex-wrap w-full max-w-xl mx-auto my-4">
+      <div className="flex gap-2 items-center justify-center flex-wrap w-full max-w-2xl mx-auto my-4">
         {skills.map((item) => (
           <button
             type="button"

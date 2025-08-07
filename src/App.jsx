@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import { BrowserRouter } from "react-router";
 import Skills from "./components/Skills";
+import FeaturedProject from "./components/FeaturedProject";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <main className="max-w-3xl w-full mx-auto"> 
         <Hero />
         <Skills />
+        <FeaturedProject />
       </main>
     </div>
     </BrowserRouter>
