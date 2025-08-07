@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router";
 import Skills from "./components/Skills";
 import FeaturedProject from "./components/FeaturedProject";
 import Contributions from "./components/Contributions";
+import Thoughts from "./components/Thoughts";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Skills />
         <FeaturedProject />
         <Contributions />
+        <Thoughts />
       </main>
     </div>
     </BrowserRouter>

@@ -96,4 +96,7 @@ export const featuredProjects = [
   },
 ];
 
-export const contributionShowYear = [2024, 2025]
+export const contributionShowYear = [2024, 2025];
+
+export const thought =
+  "I value creating meaningful work over chasing cheap attention. I know I have the skills and potential to achieve great things—my real challenge is overcoming laziness and staying consistent.";
