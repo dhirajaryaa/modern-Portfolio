@@ -6,7 +6,7 @@ function Contributions() {
   const [year, setYear] = useState(new Date().getFullYear());
 
   return (
-    <section className="flex flex-col gap-2 mt-8">
+    <section className="flex flex-col gap-2 my-8">
       <p className="text-lg font-semibold">gitHub contributions 📟:</p>
 
       <div className="flex items-center justify-center flex-col gap-3">
@@ -22,7 +22,9 @@ function Contributions() {
               type="button"
               key={y}
               onClick={() => setYear(y)}
-              className="p-3 text-sm cursor-pointer hover:bg-gray-300 duration-150 ease-in-out bg-gray-200 rounded-sm capitalize font-medium"
+              className={`px-3 py-2 text-sm cursor-pointer border duration-150 ease-in-out rounded-lg capitalize font-medium ${
+                year === y ? "bg-gray-900 text-white" : "bg-white text-black"
+              }`}
             >
               {y}
             </button>
