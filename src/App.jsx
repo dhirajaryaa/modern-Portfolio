@@ -9,15 +9,15 @@ import { BrowserRouter } from "react-router";
 function App() {
   return (
     <BrowserRouter>
-    <div className="antialiased min-h-screen w-full">
+    <div className="antialiased min-h-screen w-full font-body">
       <Header />
-      <main>
+      <main className="max-w-3xl w-full mx-auto"> 
         <Hero />
-        <FeatureProjects />
-        <About />
-        <Contact />
+        {/* <FeatureProjects /> */}
+        {/* <About /> */}
+        {/* <Contact /> */}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
     </BrowserRouter>
   );

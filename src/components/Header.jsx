@@ -4,7 +4,7 @@ import { BsCircleHalf } from "react-icons/bs";
 function Header() {
   return (
     <header className="flex w-full z-50 justify-center items-center ">
-      <nav className=" flex items-center justify-between max-w-4xl w-full">
+      <nav className=" flex items-center justify-between max-w-3xl w-full mt-5">
           <NavLink className={`text-3xl font-semibold text-gray-800 cursor-pointer font-mono tracking-wide`} to={"/"} >
             Dhiraj.dev
           </NavLink>
@@ -13,8 +13,8 @@ function Header() {
           <NavLink
             className={({ isActive }) =>
               isActive
-                ? "underline text-blue-500 text-xl font-light cursor-pointer font-mono"
-                : "text-xl font-light text-gray-600 cursor-pointer font-mono"
+                ? "underline text-blue-500 text-xl font-light cursor-pointer"
+                : "text-xl font-light text-gray-600 cursor-pointer"
             }
             to={"/blog"}
           >
