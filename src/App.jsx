@@ -4,10 +4,12 @@ import FeatureProjects from "./components/FeatureProjects";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import { BrowserRouter } from "react-router";
 
 function App() {
   return (
-    <div className="bg-gray-900 text-white antialiased font-sans min-h-screen w-full">
+    <BrowserRouter>
+    <div className="antialiased min-h-screen w-full">
       <Header />
       <main>
         <Hero />
@@ -17,6 +19,7 @@ function App() {
       </main>
       <Footer />
     </div>
+    </BrowserRouter>
   );
 }
 

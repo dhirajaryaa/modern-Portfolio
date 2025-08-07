@@ -1,37 +1,37 @@
-import React, { useState } from "react";
+import { NavLink } from "react-router";
+import { BsCircleHalf } from "react-icons/bs";
 
 function Header() {
-  const [activeLink, setActiveLink] = useState("home");
-  const navItems = ["Home", "Project", "About", "Contact"];
-
-  const handleClick = (link) => {
-    setActiveLink(link);
-  };
-
   return (
-    <header className="flex w-full z-50 justify-center items-center fixed top-3">
-      <nav
-        className="flex p-1 gap-1 border rounded-full border-white/15 bg-white/10 backdrop-blur"
-        aria-label="main navigation"
-      >
-        {navItems.map((item) => (
-          <a
-            key={item.toLowerCase()}
-            href={`#${item.toLowerCase()}`}
-            className={
-              activeLink === item.toLowerCase()
-                ? "nav-items nav-items-active"
-                : "nav-items"
+    <header className="flex w-full z-50 justify-center items-center ">
+      <nav className=" flex items-center justify-between max-w-4xl w-full">
+          <NavLink className={`text-3xl font-semibold text-gray-800 cursor-pointer font-mono tracking-wide`} to={"/"} >
+            Dhiraj.dev
+          </NavLink>
+          <div className="flex items-center gap-4">
+          
+          <NavLink
+            className={({ isActive }) =>
+              isActive
+                ? "underline text-blue-500 text-xl font-light cursor-pointer font-mono"
+                : "text-xl font-light text-gray-600 cursor-pointer font-mono"
             }
-            onClick={() => handleClick(item.toLowerCase())}
-            aria-current={
-              activeLink === item.toLowerCase() ? "page" : undefined
-            }
-            aria-label={`View ${item.toLowerCase()}`}
+            to={"/blog"}
           >
-            {item}
-          </a>
-        ))}
+            blog
+          </NavLink>
+          <NavLink
+            className={({ isActive }) =>
+              isActive
+                ? "underline text-blue-500 text-xl font-light cursor-pointer font-mono"
+                : "text-xl font-light text-gray-600 cursor-pointer font-mono"
+            }
+            to={"/pow"}
+          >
+            pow
+          </NavLink>
+          <BsCircleHalf size={20} />
+          </div>
       </nav>
     </header>
   );

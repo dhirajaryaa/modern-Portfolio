@@ -1,11 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 @layer base {
-  .nav-items {
+  /* .nav-items {
     @apply px-4 py-1.5 rounded-full text-sm font-semibold text-white/70 hover:text-white hover:bg-white/10 transition duration-300;
   }
   .nav-items-active {
@@ -16,6 +15,9 @@
   }
   html {
     @apply scroll-smooth;
+  } */
+  body:{
+      font-family: "Geist Mono", monospace;
   }
 }
 
