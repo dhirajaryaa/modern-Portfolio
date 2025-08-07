@@ -7,7 +7,7 @@ function FeaturedProject() {
   return (
     <section className="flex flex-col gap-2 mt-8">
       <p className="text-lg font-semibold">my pov ✨:</p>
-      <div className="flex gap-2 justify-evenly my-3">
+      <div className="flex gap-2 justify-evenly my-3 max-w-2xl w-full mx-auto">
         {featuredProjects.map((project) => (
           <article
             key={project.name}

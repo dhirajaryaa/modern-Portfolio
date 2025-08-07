@@ -5,7 +5,7 @@ function Header() {
   return (
     <header className="flex w-full z-50 justify-center items-center ">
       <nav className=" flex items-center justify-between max-w-3xl w-full mt-5">
-          <NavLink className={`text-3xl font-semibold text-gray-800 cursor-pointer font-mono tracking-wide`} to={"/"} >
+          <NavLink className={`text-3xl font-semibold text-gray-800 cursor-pointer tracking-tight`} to={"/"} >
             Dhiraj.dev
           </NavLink>
           <div className="flex items-center gap-4">

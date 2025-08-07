@@ -46,7 +46,7 @@ function Hero() {
       {/* links  */}
       <div className="flex flex-col gap-2 mt-4">
         <p className="text-lg font-semibold my-2">hire me!! 👇</p>
-        <div className="flex gap-2 items-center">
+        <div className="flex gap-2 items-center justify-start max-w-2xl w-full mx-auto ">
           {
             hireMeLinks.map((item)=>(
           <a

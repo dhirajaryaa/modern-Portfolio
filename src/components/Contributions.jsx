@@ -9,7 +9,7 @@ function Contributions() {
     <section className="flex flex-col gap-2 my-8">
       <p className="text-lg font-semibold">gitHub contributions 📟:</p>
 
-      <div className="flex items-center justify-center flex-col gap-3">
+      <div className="flex items-center justify-center flex-col gap-3 max-w-2xl w-full mx-auto">
         <GitHubCalendar
           username="dhirajaryaa"
           year={year}
