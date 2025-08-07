@@ -5,6 +5,7 @@ import Skills from "./components/Skills";
 import FeaturedProject from "./components/FeaturedProject";
 import Contributions from "./components/Contributions";
 import Thoughts from "./components/Thoughts";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Contributions />
         <Thoughts />
       </main>
+      <Footer />
     </div>
     </BrowserRouter>
   );
