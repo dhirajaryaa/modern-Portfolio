@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import { BrowserRouter } from "react-router";
 import Skills from "./components/Skills";
 import FeaturedProject from "./components/FeaturedProject";
+import Contributions from "./components/Contributions";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Hero />
         <Skills />
         <FeaturedProject />
+        <Contributions />
       </main>
     </div>
     </BrowserRouter>

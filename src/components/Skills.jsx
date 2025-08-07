@@ -1,4 +1,3 @@
-import React from "react";
 import { SiGmail } from "react-icons/si";
 import { skills } from "../data/profile";
 
@@ -9,6 +8,7 @@ function Skills() {
       <div className="flex gap-2 items-center justify-center flex-wrap w-full max-w-2xl mx-auto my-4">
         {skills.map((item) => (
           <button
+          key={item.name}
             type="button"
             className="flex items-center border bg-white border-gray-300 shadow-md rounded-lg px-2 py-1 gap-1.5 text-sm whitespace-nowrap"
           >

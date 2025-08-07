@@ -37,7 +37,7 @@ function Hero() {
         </div>
       </div>
       {/* About */}
-      <p class="mt-4 px-2 text-sm sm:text-base w-full text-justify leading-6 text-gray-800 font-text">
+      <p className="mt-4 px-2 text-sm sm:text-base w-full text-justify leading-6 text-gray-800 font-text">
         A 19-year-old self-taught MERN Stack Developer, passionate about
         building impactful web applications. Exploring the intersection of "AI"
         and modern web technologies, with a vision to launch innovative digital

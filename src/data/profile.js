@@ -95,3 +95,5 @@ export const featuredProjects = [
     repoLink: "https://github.com/dhirajaryaa/AI-Resume-Builder",
   },
 ];
+
+export const contributionShowYear = [2024, 2025]
