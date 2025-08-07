@@ -1,0 +1,24 @@
+import React from "react";
+import { SiGmail } from "react-icons/si";
+import { skills } from "../data/profile";
+
+function Skills() {
+  return (
+    <section className="flex flex-col gap-2 my-10">
+      <p className="text-lg font-semibold">i definitely do 💪🏻:</p>
+      <div className="flex gap-2 items-center justify-center flex-wrap w-full max-w-xl mx-auto my-4">
+        {skills.map((item) => (
+          <button
+            type="button"
+            className="flex items-center border bg-white border-gray-300 shadow-md rounded-lg px-2 py-1 gap-1.5 text-sm whitespace-nowrap"
+          >
+            {item.icon && <item.icon className={"size-4"} />}
+            {item.name}
+          </button>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+export default Skills;

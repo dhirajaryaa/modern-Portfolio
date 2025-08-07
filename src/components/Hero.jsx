@@ -45,7 +45,7 @@ function Hero() {
       </p>
       {/* links  */}
       <div className="flex flex-col gap-2 mt-4">
-        <p className="text-lg font-semibold my-4">hire me!! 👇</p>
+        <p className="text-lg font-semibold my-2">hire me!! 👇</p>
         <div className="flex gap-2 items-center">
           {
             hireMeLinks.map((item)=>(
@@ -53,9 +53,9 @@ function Hero() {
           key={item.name}
             href={item.link}
             target="_blank"
-            className="flex items-center underline border border-gray-300 rounded-lg px-2 py-1 gap-1.5 text-sm sm:text-base whitespace-nowrap"
+            className="flex items-center underline border border-gray-300 rounded-lg px-2 py-1 gap-1.5 text-sm sm:text-base whitespace-nowrap font-text"
           >
-            <img src={item.icon} alt={item.name} className="size-4" />
+              {item.icon && <item.icon className={"size-4"} />}
              {item.name}
           </a>
             ))
