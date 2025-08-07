@@ -1,8 +1,6 @@
 import profileImg from "../assets/images/profile.png";
 import { IoLocationOutline } from "react-icons/io5";
-import { BsTwitterX, BsLinkedin, BsGithub } from "react-icons/bs";
-import { SiGooglemeet,SiGmail  } from "react-icons/si";
-import { RiPagesLine } from "react-icons/ri";
+import { socialLinks,hireMeLinks } from "../data/profile";
 
 function Hero() {
   return (
@@ -24,27 +22,17 @@ function Hero() {
           </h4>
           {/* social links  */}
           <div className="flex gap-2 items-center sm:gap-3">
-            <a
-              href="https://x.com/dhirajarya01"
-              target="_blank"
-              className="flex items-center underline border border-gray-300 rounded-lg px-2 py-1 gap-1 text-sm sm:text-xs whitespace-nowrap"
-            >
-              <BsTwitterX size={15} /> Twitter
-            </a>
-            <a
-              href="https://x.com/dhirajarya01"
-              target="_blank"
-              className="flex items-center underline border border-gray-300 rounded-lg px-2 py-1 gap-1 text-sm sm:text-xs whitespace-nowrap"
-            >
-              <BsLinkedin size={15} /> Linkedin
-            </a>
-            <a
-              href="https://x.com/dhirajarya01"
-              target="_blank"
-              className="flex items-center underline border border-gray-300 rounded-lg px-2 py-1 gap-1 text-sm sm:text-xs whitespace-nowrap"
-            >
-              <BsGithub size={15} /> Github
-            </a>
+            {socialLinks.map((item) => (
+              <a
+                key={item.name}
+                href={item.link}
+                target="_blank"
+                className="flex items-center underline border border-gray-300 rounded-lg px-2 py-1 gap-1 text-sm sm:text-xs whitespace-nowrap"
+              >
+                {item.icon && <item.icon size={15} />}
+                {item.name}
+              </a>
+            ))}
           </div>
         </div>
       </div>
@@ -59,27 +47,19 @@ function Hero() {
       <div className="flex flex-col gap-2 mt-4">
         <p className="text-lg font-semibold my-4">hire me!! 👇</p>
         <div className="flex gap-2 items-center">
+          {
+            hireMeLinks.map((item)=>(
           <a
-            href="https://x.com/dhirajarya01"
+          key={item.name}
+            href={item.link}
             target="_blank"
             className="flex items-center underline border border-gray-300 rounded-lg px-2 py-1 gap-1.5 text-sm sm:text-base whitespace-nowrap"
           >
-            <SiGooglemeet size={16} /> meet
+            <img src={item.icon} alt={item.name} className="size-4" />
+             {item.name}
           </a>
-          <a
-            href="https://x.com/dhirajarya01"
-            target="_blank"
-            className="flex items-center underline border border-gray-300 rounded-lg px-2 py-1 gap-1.5 text-sm sm:text-base whitespace-nowrap"
-          >
-            <RiPagesLine  size={16} /> resume
-          </a>
-          <a
-            href="https://x.com/dhirajarya01"
-            target="_blank"
-            className="flex items-center underline border border-gray-300 rounded-lg px-2 py-1 gap-1.5 text-sm sm:text-base whitespace-nowrap"
-          >
-            <SiGmail  size={16} /> gmail
-          </a>
+            ))
+          }
         </div>
       </div>
     </section>

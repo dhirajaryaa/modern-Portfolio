@@ -13,8 +13,8 @@ function Header() {
           <NavLink
             className={({ isActive }) =>
               isActive
-                ? "underline text-blue-500 text-xl font-light cursor-pointer"
-                : "text-xl font-light text-gray-600 cursor-pointer"
+                ? "underline text-blue-500 text-lg font-light cursor-pointer"
+                : "text-lg font-light text-gray-600 cursor-pointer"
             }
             to={"/blog"}
           >
@@ -23,8 +23,8 @@ function Header() {
           <NavLink
             className={({ isActive }) =>
               isActive
-                ? "underline text-blue-500 text-xl font-light cursor-pointer font-mono"
-                : "text-xl font-light text-gray-600 cursor-pointer font-mono"
+                ? "underline text-blue-500 text-lg font-light cursor-pointer font-mono"
+                : "text-lg font-light text-gray-600 cursor-pointer font-mono"
             }
             to={"/pow"}
           >

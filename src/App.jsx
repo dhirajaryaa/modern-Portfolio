@@ -1,10 +1,7 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import FeatureProjects from "./components/FeatureProjects";
-import Footer from "./components/Footer";
-import About from "./components/About";
-import Contact from "./components/Contact";
 import { BrowserRouter } from "react-router";
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -13,11 +10,8 @@ function App() {
       <Header />
       <main className="max-w-3xl w-full mx-auto"> 
         <Hero />
-        {/* <FeatureProjects /> */}
-        {/* <About /> */}
-        {/* <Contact /> */}
+        <Skills />
       </main>
-      {/* <Footer /> */}
     </div>
     </BrowserRouter>
   );
