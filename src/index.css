@@ -1,22 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/* font import  */
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer base {
-  .nav-items {
-    @apply px-4 py-1.5 rounded-full text-sm font-semibold text-white/70 hover:text-white hover:bg-white/10 transition duration-300;
-  }
-  .nav-items-active {
-    @apply bg-white text-gray-900 hover:text-gray-900 hover:bg-white/70;
-  }
-  .hero-ring {
-    @apply absolute inset-0 -z-30 border-2 border-emerald-300/5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full shadow-[0_0_80px_inset] shadow-emerald-300/5;
-  }
-  html {
-    @apply scroll-smooth;
-  }
+/* dark and light theme  */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* custom class  */
+@theme {
+  --font-body: "Geist Mono", monospace;
+  --font-text: "Space Grotesk", sans-serif;
 }
-
-

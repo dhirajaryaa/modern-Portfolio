@@ -1,37 +1,45 @@
-import React, { useState } from "react";
+import { NavLink } from "react-router";
+import { BsCircleHalf } from "react-icons/bs";
 
-function Header() {
-  const [activeLink, setActiveLink] = useState("home");
-  const navItems = ["Home", "Project", "About", "Contact"];
-
-  const handleClick = (link) => {
-    setActiveLink(link);
+function Header({ setTheme }) {
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
   };
-
   return (
-    <header className="flex w-full z-50 justify-center items-center fixed top-3">
-      <nav
-        className="flex p-1 gap-1 border rounded-full border-white/15 bg-white/10 backdrop-blur"
-        aria-label="main navigation"
-      >
-        {navItems.map((item) => (
+    <header className="flex w-full z-50 justify-center items-center py-4 bg-white text-black dark:bg-black duration-500 transition-colors dark:text-white sticky top-0">
+      <nav className=" flex items-center justify-between max-w-3xl w-full px-2 sm:px-4">
+        <NavLink
+          className={`sm:text-3xl text-xl font-semibold cursor-pointer tracking-tight`}
+          to={"/"}
+        >
+          Dhiraj.dev
+        </NavLink>
+        <div className="flex items-center gap-4">
           <a
-            key={item.toLowerCase()}
-            href={`#${item.toLowerCase()}`}
-            className={
-              activeLink === item.toLowerCase()
-                ? "nav-items nav-items-active"
-                : "nav-items"
+            className={({ isActive }) =>
+              isActive
+                ? "underline text-blue-500 text-sm sm:text-lg  font-light cursor-pointer"
+                : "text-sm sm:text-lg  font-light text-gray-600 dark:text-white cursor-pointer"
             }
-            onClick={() => handleClick(item.toLowerCase())}
-            aria-current={
-              activeLink === item.toLowerCase() ? "page" : undefined
-            }
-            aria-label={`View ${item.toLowerCase()}`}
+            href="https://dev.to/dhirajarya01"
+          target="_blank"
           >
-            {item}
+            blog
           </a>
-        ))}
+          <NavLink
+            className={({ isActive }) =>
+              isActive
+                ? "underline text-blue-500 text-sm sm:text-lg  font-light cursor-pointer"
+                : "text-sm sm:text-lg  font-light text-gray-600 dark:text-white cursor-pointer"
+            }
+            to={"/pow"}
+          >
+            pow
+          </NavLink>
+          <button onClick={toggleTheme}>
+            <BsCircleHalf className="size-5 sm:size-6" />
+          </button>
+        </div>
       </nav>
     </header>
   );
