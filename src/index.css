@@ -1,16 +1,13 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"); */
-/* @import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
+/* font import  */
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap");
 
 @import "tailwindcss";
 
+/* dark and light theme  */
+@custom-variant dark (&:where(.dark, .dark *));
 
+/* custom class  */
 @theme {
-  --font-body : "Geist Mono", monospace;
-    --font-text: "Space Grotesk", sans-serif;
+  --font-body: "Geist Mono", monospace;
+  --font-text: "Space Grotesk", sans-serif;
 }
-
-
-
-
-

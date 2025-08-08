@@ -1,14 +1,20 @@
 import { NavLink } from "react-router";
 import { BsCircleHalf } from "react-icons/bs";
 
-function Header() {
+function Header({setTheme}) {
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
+  };
   return (
     <header className="flex w-full z-50 justify-center items-center">
       <nav className=" flex items-center justify-between max-w-3xl w-full mt-5">
-          <NavLink className={`sm:text-3xl text-xl font-semibold cursor-pointer tracking-tight`} to={"/"} >
-            Dhiraj.dev
-          </NavLink>
-          <div className="flex items-center gap-4">
+        <NavLink
+          className={`sm:text-3xl text-xl font-semibold cursor-pointer tracking-tight`}
+          to={"/"}
+        >
+          Dhiraj.dev
+        </NavLink>
+        <div className="flex items-center gap-4">
           <NavLink
             className={({ isActive }) =>
               isActive
@@ -20,7 +26,7 @@ function Header() {
             blog
           </NavLink>
           <NavLink
-             className={({ isActive }) =>
+            className={({ isActive }) =>
               isActive
                 ? "underline text-blue-500 text-sm sm:text-lg  font-light cursor-pointer"
                 : "text-sm sm:text-lg  font-light text-gray-600 dark:text-white cursor-pointer"
@@ -29,8 +35,10 @@ function Header() {
           >
             pow
           </NavLink>
+          <button onClick={toggleTheme}>
           <BsCircleHalf className="size-5 sm:size-6" />
-          </div>
+          </button>
+        </div>
       </nav>
     </header>
   );

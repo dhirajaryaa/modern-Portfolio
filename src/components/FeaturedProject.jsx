@@ -7,11 +7,11 @@ function FeaturedProject() {
   return (
     <section className="flex flex-col gap-2 mt-8">
       <p className="text-lg font-semibold">my pov ✨:</p>
-      <div className="flex gap-4 justify-evenly my-3 max-w-2xl w-full mx-auto flex-wrap">
+      <div className="flex gap-4 justify-evenly my-3 max-w-3xl w-full mx-auto flex-wrap">
         {featuredProjects.map((project) => (
           <article
             key={project.name}
-            className="border border-gray-200 dark:border-gray-700 rounded-lg w-[330px] shadow-sm dark:shadow-gray-500 shadow-gray-800"
+            className="border border-gray-200 dark:border-gray-700 rounded-lg w-[330px] shadow-sm dark:shadow-gray-500"
           >
             <img
               src={project.image}
