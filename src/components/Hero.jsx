@@ -10,7 +10,7 @@ function Hero() {
         <img
           src={profileImg}
           alt="Profile Image"
-          className="rounded-2xl size-22 sm:size-26"
+          className="rounded-xl sm:rounded-2xl size-22 sm:size-26"
         />
         <div className="flex flex-col gap-2">
           <h1 className="font-bold text-lg sm:text-xl cursor-pointer">
@@ -39,10 +39,10 @@ function Hero() {
       </div>
       {/* About */}
       <p className="mt-4 px-2 text-sm sm:text-base w-full text-justify leading-6 opacity-90 font-text">
-        A 19-year-old self-taught MERN Stack Developer, passionate about
-        building impactful web applications. Exploring the intersection of "AI"
-        and modern web technologies, with a vision to launch innovative digital
-        products.
+        A 19-year-old self-taught <span className="font-semibold underline text-neutral-700 dark:text-stone-400 font-text">MERN</span> Stack Developer, passionate about
+        building impactful web applications. Exploring the intersection of <span className="font-semibold underline text-neutral-700 dark:text-stone-400 font-text">AI </span> 
+         and modern web technologies, with a vision to launch innovative <span className="font-semibold underline text-neutral-700 dark:text-stone-400 font-text ">Digital
+        Products.</span>
       </p>
       {/* links  */}
       <div className="flex flex-col gap-2 mt-4">

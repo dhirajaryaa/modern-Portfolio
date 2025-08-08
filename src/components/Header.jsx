@@ -6,7 +6,7 @@ function Header({ setTheme }) {
     setTheme((prev) => (prev === "dark" ? "light" : "dark"));
   };
   return (
-    <header className="flex w-full z-50 justify-center items-center py-4 bg-white text-black dark:bg-black duration-500 transition-colors dark:text-white sticky top-0">
+    <header className="flex w-full z-50 justify-center items-center py-4 bg-white text-black dark:bg-slate-950 duration-500 transition-colors dark:text-white sticky top-0">
       <nav className=" flex items-center justify-between max-w-3xl w-full px-2 sm:px-4">
         <NavLink
           className={`sm:text-3xl text-xl font-semibold cursor-pointer tracking-tight`}

@@ -2,7 +2,7 @@ import { useState } from "react";
 import GitHubCalendar from "react-github-calendar";
 import { contributionShowYear } from "../data/profile";
 
-function Contributions({theme}) {
+function Contributions({ theme }) {
   const [year, setYear] = useState(new Date().getFullYear());
 
   return (
@@ -23,7 +23,9 @@ function Contributions({theme}) {
               key={y}
               onClick={() => setYear(y)}
               className={`px-3 py-2 text-sm cursor-pointer border duration-150 ease-in-out rounded-lg capitalize font-medium ${
-                year === y ? "bg-gray-900 text-white" : "bg-white text-black"
+                year === y
+                  ? "bg-gray-900 dark:bg-white text-white dark:text-gray-800"
+                  : "bg-white dark:bg-slate-950 text-black dark:text-white"
               }`}
             >
               {y}
