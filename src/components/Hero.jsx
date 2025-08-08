@@ -6,28 +6,28 @@ function Hero() {
   return (
     <section id="home" aria-labelledby="hero-title">
       {/* hero image and info  */}
-      <div className="flex gap-3 items-center mt-10">
+      <div className="flex gap-3 items-start mt-10">
         <img
           src={profileImg}
           alt="Profile Image"
-          className="rounded-2xl size-26"
+          className="rounded-2xl size-22 sm:size-26"
         />
         <div className="flex flex-col gap-2">
-          <h1 className="text-gray-900 font-bold text-lg sm:text-xl cursor-pointer">
+          <h1 className="font-bold text-lg sm:text-xl cursor-pointer">
             🙋‍♂️, I'm Dhiraj Arya
           </h1>
-          <h4 className="flex items-center gap-1 text-gray-800 text-sm sm:text-base cursor-pointer">
+          <h4 className="flex items-center gap-1 text-sm sm:text-base cursor-pointer">
             <IoLocationOutline size={20} />
             <span>Patna, India</span>
           </h4>
           {/* social links  */}
-          <div className="flex gap-2 items-center sm:gap-3">
+          <div className="flex gap-2 items-center sm:gap-3 flex-wrap">
             {socialLinks.map((item) => (
               <a
                 key={item.name}
                 href={item.link}
                 target="_blank"
-                className="flex items-center underline border border-gray-300 rounded-lg px-2 py-1 gap-1 text-sm sm:text-xs whitespace-nowrap"
+                className="flex items-center underline border border-gray-300 rounded-lg px-2 py-1 gap-1 text-xs sm:text-sm whitespace-nowrap"
               >
                 {item.icon && <item.icon size={15} />}
                 {item.name}
@@ -37,7 +37,7 @@ function Hero() {
         </div>
       </div>
       {/* About */}
-      <p className="mt-4 px-2 text-sm sm:text-base w-full text-justify leading-6 text-gray-800 font-text">
+      <p className="mt-4 px-2 text-sm sm:text-base w-full text-justify leading-6 opacity-90 font-text">
         A 19-year-old self-taught MERN Stack Developer, passionate about
         building impactful web applications. Exploring the intersection of "AI"
         and modern web technologies, with a vision to launch innovative digital

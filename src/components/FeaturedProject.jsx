@@ -7,11 +7,11 @@ function FeaturedProject() {
   return (
     <section className="flex flex-col gap-2 mt-8">
       <p className="text-lg font-semibold">my pov ✨:</p>
-      <div className="flex gap-2 justify-evenly my-3 max-w-2xl w-full mx-auto">
+      <div className="flex gap-4 justify-evenly my-3 max-w-2xl w-full mx-auto flex-wrap">
         {featuredProjects.map((project) => (
           <article
             key={project.name}
-            className="border border-gray-200 rounded-lg w-[330px]"
+            className="border border-gray-200 dark:border-gray-700 rounded-lg w-[330px] shadow-sm dark:shadow-gray-500 shadow-gray-800"
           >
             <img
               src={project.image}
@@ -35,7 +35,7 @@ function FeaturedProject() {
               <span className="text-xs text-gray-400 capitalize">
                 {project.date}
               </span>
-              <p className="text-sm font-text mt-1 text-gray-700">
+              <p className="text-sm font-text mt-1 opacity-80">
                 {project.description}
               </p>
               <div className="flex flex-wrap gap-2 my-2">
@@ -43,7 +43,7 @@ function FeaturedProject() {
                   <button
                     type="button"
                     key={tag}
-                    className="py-1 px-2 bg-gray-200 rounded-sm text-xs capitalize font-medium"
+                    className="py-1 px-2 bg-gray-200 dark:bg-gray-700 rounded-sm text-xs capitalize font-medium"
                   >
                     {tag}
                   </button>
@@ -53,14 +53,14 @@ function FeaturedProject() {
                 <a
                   href={project.liveLink}
                   target="_black"
-                  className="bg-slate-600 hover:bg-slate-800 duration-200 ease-in-out text-white flex gap-2 items-center p-2 rounded-lg text-sm font-text"
+                  className="bg-slate-600 hover:bg-slate-800 duration-200 ease-in-out hover:underline text-white flex gap-2 items-center p-2 rounded-lg text-sm font-text"
                 >
                   <FaLink size={16} /> Visit Site
                 </a>
                 <a
                   href={project.repoLink}
                   target="_black"
-                  className="bg-gray-900 hover:bg-slate-800 duration-200 ease-in-out text-white flex gap-2 items-center p-2 rounded-lg text-sm font-text"
+                  className="bg-gray-900 hover:bg-slate-800 duration-200 ease-in-out hover:underline text-white flex gap-2 items-center p-2 rounded-lg text-sm font-text"
                 >
                   <FaGithub size={16} /> Github
                 </a>

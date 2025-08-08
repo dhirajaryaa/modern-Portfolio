@@ -10,7 +10,7 @@ function Skills() {
           <button
           key={item.name}
             type="button"
-            className="flex items-center border bg-white border-gray-300 shadow-md rounded-lg px-2 py-1 gap-1.5 text-sm whitespace-nowrap"
+            className="flex items-center border bg-white text-gray-800 border-gray-300 shadow-md rounded-lg px-2 py-1 gap-1.5 text-sm whitespace-nowrap"
           >
             {item.icon && <item.icon className={"size-4"} />}
             {item.name}
