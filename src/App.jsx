@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <BrowserRouter>
-    <div className="antialiased min-h-screen w-full font-body">
+    <div className="antialiased min-h-screen w-full font-body px-2">
       <Header />
       <main className="max-w-3xl w-full mx-auto"> 
         <Hero />

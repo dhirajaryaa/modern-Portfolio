@@ -3,34 +3,33 @@ import { BsCircleHalf } from "react-icons/bs";
 
 function Header() {
   return (
-    <header className="flex w-full z-50 justify-center items-center ">
+    <header className="flex w-full z-50 justify-center items-center">
       <nav className=" flex items-center justify-between max-w-3xl w-full mt-5">
-          <NavLink className={`text-3xl font-semibold text-gray-800 cursor-pointer tracking-tight`} to={"/"} >
+          <NavLink className={`sm:text-3xl text-xl font-semibold text-gray-800 cursor-pointer tracking-tight`} to={"/"} >
             Dhiraj.dev
           </NavLink>
           <div className="flex items-center gap-4">
-          
           <NavLink
             className={({ isActive }) =>
               isActive
-                ? "underline text-blue-500 text-lg font-light cursor-pointer"
-                : "text-lg font-light text-gray-600 cursor-pointer"
+                ? "underline text-blue-500 text-sm sm:text-lg  font-light cursor-pointer"
+                : "text-sm sm:text-lg  font-light text-gray-600 cursor-pointer"
             }
             to={"/blog"}
           >
             blog
           </NavLink>
           <NavLink
-            className={({ isActive }) =>
+             className={({ isActive }) =>
               isActive
-                ? "underline text-blue-500 text-lg font-light cursor-pointer font-mono"
-                : "text-lg font-light text-gray-600 cursor-pointer font-mono"
+                ? "underline text-blue-500 text-sm sm:text-lg  font-light cursor-pointer"
+                : "text-sm sm:text-lg  font-light text-gray-600 cursor-pointer"
             }
             to={"/pow"}
           >
             pow
           </NavLink>
-          <BsCircleHalf size={20} />
+          <BsCircleHalf className="size-5 sm:size-6" />
           </div>
       </nav>
     </header>
