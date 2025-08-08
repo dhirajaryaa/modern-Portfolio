@@ -27,6 +27,7 @@ function Hero() {
                 key={item.name}
                 href={item.link}
                 target="_blank"
+                 rel="noopener noreferrer"
                 className="flex items-center underline border border-gray-300 rounded-lg px-2 py-1 gap-1 text-xs sm:text-sm whitespace-nowrap"
               >
                 {item.icon && <item.icon size={15} />}
@@ -53,6 +54,7 @@ function Hero() {
           key={item.name}
             href={item.link}
             target="_blank"
+             rel="noopener noreferrer"
             className="flex items-center underline border border-gray-300 rounded-lg px-2 py-1 gap-1.5 text-sm sm:text-base whitespace-nowrap font-text"
           >
               {item.icon && <item.icon className={"size-4"} />}

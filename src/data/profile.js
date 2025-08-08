@@ -28,7 +28,7 @@ export const socialLinks = [
   {
     icon: BsLinkedin,
     name: "linkedin",
-    link: "https://linkedin.com/in/dhirajarya01",
+    link: "https://www.linkedin.com/in/dhirajarya01/",
   },
   {
     icon: BsGithub,
@@ -41,17 +41,17 @@ export const hireMeLinks = [
   {
     icon: Meet,
     name: "meet",
-    link: "https://meet.com",
+    link: "https://meet.google.com/new",
   },
   {
     icon: Page,
     name: "resume",
-    link: "https://drive.com",
+    link: "https://drive.google.com/drive",
   },
   {
     icon: Gmail,
     name: "gmail",
-    link: "https://gmail.com",
+    link: "https://mail.google.com/mail/?view=cm&fs=1&to=dhirajarya.ptn@gmail.com&su=Hello&body=Let's%20talk!",
   },
 ];
 
