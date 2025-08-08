@@ -28,13 +28,13 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className="antialiased min-h-screen w-full font-body px-2 sm:px-4 bg-white text-gray-800 dark:bg-slate-950 dark:text-white transition-colors duration-500">
+      <div className="antialiased min-h-screen w-full font-body bg-white text-gray-800 dark:bg-slate-950 dark:text-white transition-colors duration-500">
         <Header setTheme={setTheme}/>
-        <main className="max-w-3xl w-full mx-auto">
+        <main className="max-w-3xl w-full mx-auto px-2 sm:px-4">
           <Hero />
           <Skills />
           <FeaturedProject />
-          <Contributions />
+          <Contributions theme={theme} />
           <Thoughts />
         </main>
         <Footer />

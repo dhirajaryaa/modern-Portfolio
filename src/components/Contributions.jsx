@@ -2,7 +2,7 @@ import { useState } from "react";
 import GitHubCalendar from "react-github-calendar";
 import { contributionShowYear } from "../data/profile";
 
-function Contributions() {
+function Contributions({theme}) {
   const [year, setYear] = useState(new Date().getFullYear());
 
   return (
@@ -14,7 +14,7 @@ function Contributions() {
           username="dhirajaryaa"
           year={year}
           fontSize={12}
-          colorScheme="light"
+          colorScheme={theme}
         />
         <div className="flex gap-2 flex-wrap max-w-xl">
           {contributionShowYear.map((y) => (

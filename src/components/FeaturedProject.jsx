@@ -24,8 +24,8 @@ function FeaturedProject() {
                 <p
                   className={`text-xs px-2 py-1 rounded-lg ${
                     project.status === "completed"
-                      ? " text-green-800 bg-green-400/30"
-                      : "text-orange-700 bg-orange-400/20"
+                      ? " text-green-800 bg-green-400/30 dark:text-green-400"
+                      : "text-red-700 bg-red-400/20 dark:text-rose-400"
                   }`}
                 >
                   {project.status}
