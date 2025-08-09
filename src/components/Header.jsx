@@ -15,17 +15,16 @@ function Header({ setTheme,theme }) {
           Dhiraj.dev
         </NavLink>
         <div className="flex items-center gap-4">
-          <a
+          <NavLink
             className={({ isActive }) =>
               isActive
                 ? "underline text-blue-500 text-sm sm:text-lg  font-light cursor-pointer"
                 : "text-sm sm:text-lg  font-light text-gray-600 dark:text-white cursor-pointer"
             }
-            href="https://dev.to/dhirajarya01"
-            target="_blank"
+            to="/blog"
           >
             blog
-          </a>
+          </NavLink>
           <NavLink
             className={({ isActive }) =>
               isActive
