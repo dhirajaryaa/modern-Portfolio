@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Error from "./pages/Error";
+import Blog from "./pages/Blog";
 
 function App() {
   const [theme, setTheme] = useState(() => {
@@ -30,6 +31,7 @@ function App() {
         <main className="max-w-3xl w-full mx-auto px-2 sm:px-4">
           <Routes>
             <Route path="/" element={<Home theme={theme} />} />
+            <Route path="/blog" element={<Blog />} />
             <Route path="*" element={<Error />} />
           </Routes>
         </main>
