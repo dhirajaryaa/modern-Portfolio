@@ -29,7 +29,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="antialiased min-h-screen w-full font-body bg-white text-gray-800 dark:bg-slate-950 dark:text-white transition-colors duration-500">
-        <Header setTheme={setTheme}/>
+        <Header setTheme={setTheme} theme={theme}/>
         <main className="max-w-3xl w-full mx-auto px-2 sm:px-4">
           <Hero />
           <Skills />

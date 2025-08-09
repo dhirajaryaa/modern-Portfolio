@@ -1,7 +1,7 @@
 import { NavLink } from "react-router";
-import { BsCircleHalf } from "react-icons/bs";
+import { IoMdMoon, IoIosSunny } from "react-icons/io";
 
-function Header({ setTheme }) {
+function Header({ setTheme,theme }) {
   const toggleTheme = () => {
     setTheme((prev) => (prev === "dark" ? "light" : "dark"));
   };
@@ -22,7 +22,7 @@ function Header({ setTheme }) {
                 : "text-sm sm:text-lg  font-light text-gray-600 dark:text-white cursor-pointer"
             }
             href="https://dev.to/dhirajarya01"
-          target="_blank"
+            target="_blank"
           >
             blog
           </a>
@@ -36,8 +36,14 @@ function Header({ setTheme }) {
           >
             pow
           </NavLink>
+          {/* theme toggle  */}
           <button onClick={toggleTheme}>
-            <BsCircleHalf className="size-5 sm:size-6" />
+            {theme === "dark" ? (
+              <IoIosSunny className="size-5 sm:size-6" />
+            ) : (
+              <IoMdMoon className="size-5 sm:size-6" />
+            )}
+            {/* <BsCircleHalf className="size-5 sm:size-6" /> */}
           </button>
         </div>
       </nav>
