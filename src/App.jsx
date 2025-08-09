@@ -1,12 +1,10 @@
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import { BrowserRouter } from "react-router";
-import Skills from "./components/Skills";
-import FeaturedProject from "./components/FeaturedProject";
-import Contributions from "./components/Contributions";
-import Thoughts from "./components/Thoughts";
-import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
+import { BrowserRouter, Route, Routes } from "react-router";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Error from "./pages/Error";
+import Blog from "./pages/Blog";
 
 function App() {
   const [theme, setTheme] = useState(() => {
@@ -16,26 +14,26 @@ function App() {
     return "light";
   });
 
-  useEffect(()=>{
+  useEffect(() => {
     const root = document.documentElement;
-    if(theme === "dark"){
-      root.classList.add('dark')
-    }else{
-      root.classList.remove('dark')
-    };
-    localStorage.setItem('theme',theme);
-  },[theme])
+    if (theme === "dark") {
+      root.classList.add("dark");
+    } else {
+      root.classList.remove("dark");
+    }
+    localStorage.setItem("theme", theme);
+  }, [theme]);
 
   return (
     <BrowserRouter>
       <div className="antialiased min-h-screen w-full font-body bg-white text-gray-800 dark:bg-slate-950 dark:text-white transition-colors duration-500">
-        <Header setTheme={setTheme} theme={theme}/>
+        <Header setTheme={setTheme} theme={theme} />
         <main className="max-w-3xl w-full mx-auto px-2 sm:px-4">
-          <Hero />
-          <Skills />
-          <FeaturedProject />
-          <Contributions theme={theme} />
-          <Thoughts />
+          <Routes>
+            <Route path="/" element={<Home theme={theme} />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="*" element={<Error />} />
+          </Routes>
         </main>
         <Footer />
       </div>
