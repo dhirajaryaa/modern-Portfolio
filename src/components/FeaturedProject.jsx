@@ -11,7 +11,7 @@ function FeaturedProject() {
         {featuredProjects.map((project) => (
           <article
             key={project.name}
-            className="border border-gray-200 dark:border-gray-700 rounded-lg w-[330px] shadow-sm dark:shadow-gray-500"
+            className="border border-gray-200 dark:border-gray-700 rounded-lg w-[330px] shadow-sm dark:shadow-gray-500 hover:-translate-y-[2px] duration-150 transition-transform"
           >
             <img
               src={project.image}
