@@ -31,8 +31,8 @@ function Blog() {
     <section className="flex flex-col gap-2 my-5 px-3">
       <h1 className="text-lg sm:text-xl font-semibold">my blog 📃:</h1>
       {loading ? (
-        <div className="flex items-center gap-2">
-          <FaSpinner className="animate-spin text-blue-600" />
+        <div className="flex items-center gap-2 justify-center h-[25vh]">
+          <FaSpinner className="animate-spin text-blue-600 text-" />
           <span>Loading...</span>
         </div>
       ) : error ? (
