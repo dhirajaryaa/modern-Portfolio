@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Error from "./pages/Error";
 import Blog from "./pages/Blog";
+import Pow from "./pages/Pow";
 
 function App() {
   const [theme, setTheme] = useState(() => {
@@ -32,6 +33,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home theme={theme} />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/pow" element={<Pow />} />
             <Route path="*" element={<Error />} />
           </Routes>
         </main>

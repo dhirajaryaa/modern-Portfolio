@@ -28,8 +28,6 @@ function Blog() {
     fetchBlogs();
   }, [api]);
 
-  console.log(blogs);
-
   return (
     <section className="flex flex-col gap-2 my-5 px-3">
       <h1 className="text-lg sm:text-xl font-semibold">my blog 📃:</h1>
