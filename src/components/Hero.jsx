@@ -1,4 +1,4 @@
-import profileImg from "../assets/images/profile.png";
+import profileImg from "../assets/images/profile.jpeg";
 import { IoLocationOutline } from "react-icons/io5";
 import { socialLinks,hireMeLinks } from "../data/profile";
 
